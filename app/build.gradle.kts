@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.zac.dlkit"
-    compileSdk = 34
+    compileSdk = rootProject.extra["targetSdkVersion"] as Int
 
     defaultConfig {
         applicationId = "com.zac.dlkit"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = rootProject.extra["minSdkVersion"] as Int
+        targetSdk = rootProject.extra["targetSdkVersion"] as Int
         versionCode = 1
         versionName = "1.0"
 
