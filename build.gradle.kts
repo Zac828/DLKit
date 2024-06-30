@@ -7,3 +7,4 @@ plugins {
 
 val minSdkVersion: Int by extra(24)
 val targetSdkVersion: Int by extra(34)
+val releaseVersionCode: String by extra("0.1.0")

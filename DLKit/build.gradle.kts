@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.dokka)
+    alias(libs.plugins.maven.publish)
 }
 
 android {
@@ -45,3 +46,5 @@ dependencies {
     implementation(libs.exoplayer)
 
 }
+
+project.extra["ReleaseArtifact"] = "dlkit"
