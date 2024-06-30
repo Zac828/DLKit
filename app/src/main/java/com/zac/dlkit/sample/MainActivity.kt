@@ -1,4 +1,4 @@
-package com.zac.dlkit
+package com.zac.dlkit.sample
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

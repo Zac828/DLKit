@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "DLKit"
 include(":app")
- 
+include(":DLKit")
