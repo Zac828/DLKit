@@ -1,7 +1,7 @@
-package com.zac.dlkit.presentation
+package com.zac.dlkit.presentation.internal
 
 import android.util.Log
-import com.zac.dlkit.Downloader
+import com.zac.dlkit.presentation.Downloader
 import com.zac.dlkit.domain.usecase.MainDownloadUseCase
 import com.zac.dlkit.presentation.entity.DownloadConfig
 import kotlinx.coroutines.CoroutineScope

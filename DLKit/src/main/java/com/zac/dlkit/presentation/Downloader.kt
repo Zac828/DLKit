@@ -1,11 +1,11 @@
-package com.zac.dlkit
+package com.zac.dlkit.presentation
 
 import android.content.Context
 import com.zac.dlkit.domain.di.DownloadRepositoryInject
 import com.zac.dlkit.domain.usecase.DownloadContentUseCase
 import com.zac.dlkit.domain.usecase.DownloadDrmLicenseUseCase
 import com.zac.dlkit.domain.usecase.MainDownloadUseCase
-import com.zac.dlkit.presentation.DownloaderImpl
+import com.zac.dlkit.presentation.internal.DownloaderImpl
 import com.zac.dlkit.presentation.entity.DownloadConfig
 
 interface Downloader {

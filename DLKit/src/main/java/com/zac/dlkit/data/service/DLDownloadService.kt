@@ -19,17 +19,17 @@ class DLDownloadService : DownloadService(
 ) {
 
     override fun getDownloadManager(): DownloadManager {
-        return ExoDownloadDataSource.downloadManagerAtom?.get()!!
+        return ExoDownloadDataSource.downloadManagerAtom.get()
     }
 
-    override fun getScheduler(): Scheduler? {
+    override fun getScheduler(): Scheduler {
         return PlatformScheduler(this, JOB_ID)
     }
 
     override fun getForegroundNotification(downloads: MutableList<Download>): Notification {
-        return ExoDownloadDataSource.downloadNotificationHelperAtom?.get()?.buildProgressNotification(
+        return ExoDownloadDataSource.downloadNotificationHelperAtom.get().buildProgressNotification(
             this, R.drawable.ic_download, null, null, downloads
-        )!!
+        )
     }
 
     companion object {
