@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace = "com.zac.dlkit"
-    compileSdk = 34
+    compileSdk = rootProject.extra["targetSdkVersion"] as Int
 
     defaultConfig {
-        minSdk = 24
+        minSdk = rootProject.extra["minSdkVersion"] as Int
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -16,7 +16,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -40,4 +40,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.exoplayer)
+
 }
