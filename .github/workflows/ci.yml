@@ -28,6 +28,9 @@ jobs:
       # Setup gradle
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+      # Make gradlew executable
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
       # build project
       - name: Build with Gradle
         run: ./gradlew assemble
