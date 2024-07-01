@@ -27,7 +27,7 @@ jobs:
       
       # Setup gradle
       - name: Setup Gradle
-        uses: gradle/gradle-build-action@v3
+        uses: gradle/actions/setup-gradle
       # build project
       - name: Build with Gradle
         run: ./gradlew assemble
