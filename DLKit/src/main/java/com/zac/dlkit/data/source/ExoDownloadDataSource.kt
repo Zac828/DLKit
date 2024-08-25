@@ -98,8 +98,9 @@ class ExoDownloadDataSource(
                 offlineLicenseHelper.downloadLicense(it).toList()
             }
         } catch (e: Exception) {
-            offlineLicenseHelper.release()
             null
+        } finally {
+            offlineLicenseHelper.release()
         }
     }
 
