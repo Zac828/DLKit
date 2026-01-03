@@ -5,18 +5,15 @@ import com.zac.dlkit.presentation.Downloader
 import com.zac.dlkit.presentation.entity.DownloadConfig
 
 class MainViewModel(
-    private val downloader: Downloader
+    private val downloader: Downloader,
+    private val mpdUrl: String
 ) : ViewModel() {
 
     fun startDownload() {
         val config = DownloadConfig(
-            mpdUrl = TEST_CLEAR_URL
+            mpdUrl = mpdUrl
         )
         downloader.download(config)
-    }
-
-    companion object {
-        private const val TEST_CLEAR_URL = "https://storage.googleapis.com/wvmedia/clear/h264/tears/tears_hd.mpd"
     }
 
 }

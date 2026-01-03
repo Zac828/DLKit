@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DLKit</string>
+    <string name="test_clear_url">https://storage.googleapis.com/wvmedia/clear/h264/tears/tears_hd.mpd</string>
 </resources>
